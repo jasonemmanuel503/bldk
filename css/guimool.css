@@ -1,0 +1,544 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+}
+
+::before, ::after{
+  position: absolute;
+  content: '';
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+a{
+  font-size: var(--fz-14);
+  color: var(--color-links);
+  font-weight: 500;
+  transition: var(--transition-all);
+  font-family: var(--font-main);
+  cursor: pointer;
+}
+
+a:hover{
+  color: var(--hover);
+}
+
+a:focus,
+a:focus-within,
+a:focus-visible{
+  color: var(--focus);
+}
+
+p{
+  font-size: var(--fz-14);
+  font-family: var(--font-inter);
+  font-weight: 500;
+  line-height: var(--line-height);
+  color: var(--color-p);
+  user-select: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--font-main);
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+  text-wrap: wrap;
+  color: var(--color);
+  user-select: none;
+}
+
+.container{
+  padding: var(--container);
+}
+
+button{
+background-color: var(--color);
+padding:var(--button) ;
+color: var(--color-w);
+font-size: var(--fz-12);
+border: 0;
+outline: 0;
+cursor: pointer;
+font-family: var(--font-main);
+transition: background-color var(--transition);
+}
+
+button:hover{
+  background-color: var(--hover);
+}
+
+:root{
+  --bg-1:#fff;
+  --color:#000;
+  --color-w: #fff;
+  --color-2:#1B1212;
+  --color-p:#353935;
+  --color-links:#28282B;
+  --accent:#FF0000;
+  --hover:#FF3131;
+  --focus:#FF2400;
+  /**-------Fonts Family ****/
+  --font-main:'Josefin+Sans', sans-serif;
+  --font-logo:'Parisienne', sans-serif;
+  --font-inter:'Inter', sans-serif;
+  /**** Spacing ***/
+  --container: 0.75rem 1.8rem;
+  --pad-inline: 3rem;
+  --mobile: 0.50rem 0.8rem;
+  --inner:0.625rem;
+  --line-height:1.6;
+  --mt: 1rem;
+  --button: 0.85rem 2rem;
+  --button-md:0.85rem 1.5rem;
+  --blockquote: 0.625rem 1.5rem;
+  /*** Font Sizes ****/
+  --fz-12:12px;
+  --fz-14:14px;
+  --fz-16:16px;
+  --fz-18:18px;
+  --fz-20:20px;
+  --fz-22:22px;
+  --fz-24:24px;
+  --fz-28:28px;
+  --fz-30: 30px;
+  --fz-34:34px;
+  --fz-38:38px;
+  /*** Transition ****/
+  --transition: 300ms ease-in-out;
+  --transition-all: all 200ms ease-in-out;
+  --border-50: 50%;
+  --border-50px:50px;
+  --border-bottom: 1px solid #000;
+  --border-10: 10px;
+  --transparent-bg: hsl(0 0 100% / 0.12);
+  --blur:30px;
+
+  /*** Other Colors *****/
+  --yellow: #fff500;
+  --green: green;
+  --orange: orange;
+  --indigo: indigo;
+  --linear-gradient: linear-gradient( 62deg, #111821 0%, #444 100%);
+}
+
+section, main, div{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  min-height: 100%;
+  
+}
+
+
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100vw; /* Ensure body takes full viewport width */
+  max-width: 100%; /* Prevent body from exceeding viewport */
+  box-sizing: border-box; /* Include padding and border in width calculations */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  background: var(--linear-gradient);
+}
+
+/* GUIMOOL *********************************************/
+.guimool-container{
+  --height: 130vh;
+  max-width: 100%;
+  width: 100%;
+  min-height: var(--height);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.nav-container{
+  width: 100%;
+  max-height: 10vh;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--container);
+  z-index: 999;
+}
+
+.logo{
+  max-width: 20%;
+  width: 100%;
+  height: 70px;
+}
+
+.logo-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*   NAV LINKS  *****/
+.nav-links-section{
+  padding: 10px;
+  min-width: 50%;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links-section a{
+  font-size: var(--fz-14);
+  color: var(--color-w);
+  font-family: var(--font-inter);
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
+  transition: var(--transition-all);
+  margin-inline: calc(var(--mt) * 1.3);
+
+}
+
+/*  SOCIAL LINKS *************/
+.social-media-links-guimool{
+ width: 30%;
+ height: 10vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.social-guimool{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-guimool i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1px;
+  font-size: var(--fz-20);
+  color: var(--color-w);
+  margin-inline: calc(var(--mt) * 1.3);
+  transition: transform var(--transition);
+}
+
+.social-guimool i:hover{
+  transform: scale(1.2);
+}
+
+
+
+
+/*--ajax-children-wrapper---------*/
+.ajax-children-wrapper{
+  width: 100%;
+ min-height:var(--height);
+}
+
+/*******  top-singles *************************/
+
+.top-singles-container{
+max-width: 100%;
+width: 100%;
+min-height: var(--height);
+display: flex;
+align-items: start;
+flex-direction: column;
+-ms-flex-direction: column;
+padding: 10px var(--pad-inline) 0 var(--pad-inline);
+}
+
+.top-singles-container h1{
+  color: var(--color-w);
+  font-size: var(--fz-22);
+  user-select: none;
+  margin-bottom: var(--mt);
+}
+
+#top-singles-cards{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  place-items: center;
+  gap: 10px;
+  border-radius: var(--border-10);
+}
+
+.top-single{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  align-items: start;
+ gap: var(--mt);
+}
+
+
+/*===================== TOP ARTISTS ==========================*/
+/* #top-artists{
+  max-width: 100vw;
+  width: 100%;
+  min-height: calc(var(--height) / 3);
+  border-top: 1px solid #ccc;
+}
+
+.swiper{
+  width: 100%;
+  min-height: calc(var(--height) / 3);
+  position: relative;
+  background-color: teal;
+  
+}
+
+.swpier-wrapper{
+  width: 100vw;
+  min-height: calc(var(--height) / 3);
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ grid-auto-rows: auto;
+ place-items: center;
+ gap: 30px;
+}
+
+.swiper-slide{
+  width: 300px;
+  height: 300px;
+  background-color: green;
+  border-radius: var(--border-10);
+  
+
+} */
+
+
+
+
+
+/*===================== TOP ALBUMS ==========================*/
+
+
+.art-cover{
+width: 100%;
+height: 50%;
+max-width: 100%;
+object-fit: cover;
+border-radius: var(--border-10);
+}
+
+.song-title{
+  color: var(--color-w);
+  font-size: var(--fz-18);
+}
+
+.artist-name{
+  color: #c4c0c0;
+  font-size: var(--fz-14);
+}
+
+.price{
+  color: var(--color-w);
+}
+
+.play-button{
+  background-color: var(--color-w);
+  color: var(--color);
+  font-weight: 600;
+  transition: box-shadow var(--transition), background-color var(--transition);
+}
+
+.play-button:hover{
+  box-shadow: 2px 2px 10px rgba(255,255,255,0.3),
+              -2px -2px 10px rgba(255,255,255,0.3);
+  background-color: var(--color-w);
+}
+
+.play-icon{
+  font-size: var(--fz-34);
+  font-weight: 700;
+  position: absolute;
+  top: 30%;
+  margin: 0 auto;
+  cursor: pointer;
+  color: var(--accent);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+
+
+.mp3-previewer{
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+#preview-message{
+  padding: 20px;
+  background-color: var(--color-w);
+  position: fixed;
+  width: 50%;
+  height: 10vh;
+  left: 25%;
+  bottom: 0;
+  margin: 0 auto;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#buy-btn{
+  margin-left: calc(var(--mt) - 5px);
+  font-weight: 500;
+}
+
+
+/***** PURCHASE MODAL ************************/
+#purchase-modal{
+  width: 50vw;
+  height: 70vh;
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0%;
+  bottom: 0;
+  margin:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  box-shadow: 2px 4px 40px rgba(0,0,0,0.2),
+              -2px -4px 40px rgba(0,0,0,0.2);
+  background-color: var(--bg-1);
+  padding: 20px;
+}
+
+.modal-content{
+  flex: 1;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--mt);
+  padding: 20px;
+}
+
+#close-modal{
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  transition: var(--transition);
+}
+
+#close-modal:hover{
+  opacity: 0.8;
+}
+
+.modal-content h3{
+  font-size: var(--fz-30);
+  user-select: none;
+  font-weight: 600;
+}
+
+#track-info{
+  padding: 20px;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  gap: calc(var(--mt) - 5px);
+  border: 2px solid var(--color);
+
+}
+
+#phone-number,
+#user-email{
+  width: 100%;
+  height: 5%;
+  padding: 5px;
+  font-size: var(--fz-14);
+  color: var(--color);
+}
+
+.payment-options{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#pay-orange-money{
+  background-color: var(--orange);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+  transition: background-color var(--transition);
+}
+
+#paypal-button-container{
+  padding:var(--button) ;
+  color: var(--color-w);
+  font-size: var(--fz-12);
+  border: 0;
+  outline: 0;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+  transition: background-color var(--transition);
+  position: relative;
+  width: 50%;
+  margin-top: var(--mt);
+}
+
+#pay-orange-money:hover,
+#paypal-button:hover{
+  background-color: var(--accent);
+}
+
+
+
+/***************TRACKS CONTAINER**************/
+
+
+
+
+/***************FOOTER FIEXED MP3 PLAYER**************/

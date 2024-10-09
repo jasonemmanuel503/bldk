@@ -1,0 +1,88 @@
+[
+  {
+    "productId": 1,
+    "productName": "T-shirt coton ",
+    "productPrice": 5000,
+    "image": "https://img.freepik.com/free-photo/medium-shot-senior-man-wearing-mask_23-2149324130.jpg?ga=GA1.1.791720000.1721608409&semt=ais_hybrid"
+  },
+  {
+    "productId": 2,
+    "productName": "Chemise carreaux",
+    "productPrice": 5000,
+    "image": "https://img.freepik.com/free-photo/shy-romantic-curly-woman-smiles-happily-touches-neck_273609-40807.jpg?ga=GA1.1.791720000.1721608409&semt=ais_hybrid"
+  },
+  {
+    "productId": 3,
+    "productName": "Sweat à capuche",
+    "productPrice": 5000,
+    "image": "https://img.freepik.com/premium-photo/minimalist-colored-hoodie-mockup_825767-44573.jpg?ga=GA1.1.791720000.1721608409&semt=ais_hybrid"
+  },
+  {
+    "productId": 4,
+    "productName": "Débardeur en lin",
+    "productPrice": 5000,
+    "image": "https://img.freepik.com/free-photo/medium-shot-young-man-posing-indoors_23-2151038592.jpg?ga=GA1.1.791720000.1721608409&semt=ais_hybrid"
+  },
+  {
+    "productId": 5,
+    "productName": "Polo sportif",
+    "productPrice": 5000,
+    "image": "https://img.freepik.com/premium-photo/white-hoodie-with-white-hoodie-that-says-t-shirt_1103290-52123.jpg?size=626&ext=jpg&ga=GA1.2.791720000.1721608409&semt=ais_hybrid"
+  },
+
+  {
+    "productId": 6,
+    "productName": "Blouse en soie",
+    "productPrice": 5000,
+    "image": "https://img.freepik.com/premium-photo/yellow-hoodie-mockup-front-view-white-background_1237858-2934.jpg?ga=GA1.1.791720000.1721608409&semt=ais_hybrid"
+  },
+
+  {
+    "productId": 7,
+    "productName": "Veste en denim",
+    "productPrice": 5000,
+    "image": "https://img.freepik.com/free-photo/autumn-person-with-cozy-clothes_23-2149137841.jpg?ga=GA1.1.791720000.1721608409&semt=ais_hybrid"
+  },
+
+  {
+    "productId": 8,
+    "productName": "Polo sportif",
+    "productPrice": 5000,
+    "image": "https://img.freepik.com/premium-photo/yellow-hoodie-with-white-logo-front_1141393-18386.jpg?ga=GA1.1.791720000.1721608409&semt=ais_hybrid"
+  },
+
+  {
+    "productId": 9,
+    "productName": "Pule Sortirs",
+    "productPrice": 5000,
+    "image": "https://img.freepik.com/premium-photo/man-white-hooded-sweatshirt-preferred-pullover-mockup-project-internet-marketing_961038-87819.jpg?ga=GA1.2.791720000.1721608409&semt=ais_hybrid"
+  },
+
+  {
+    "productId": 10,
+    "productName": "Mate slate",
+    "productPrice": 12,
+    "image": "https://img.freepik.com/free-photo/young-person-wearing-hoodie-mockup_23-2149246174.jpg?ga=GA1.2.791720000.1721608409&semt=ais_hybrid"
+  },
+
+  {
+    "productId": 11,
+    "productName": "pule picnic",
+    "productPrice": 50,
+    "image": "https://img.freepik.com/premium-photo/man-wearing-green-hoodie-that-says-hes-smiling_1148406-35486.jpg?ga=GA1.2.791720000.1721608409&semt=ais_hybrid"
+  },
+
+  {
+    "productId": 12,
+    "productName": "swagg americain",
+    "productPrice": 56,
+    "image": "https://img.freepik.com/premium-photo/man-black-hooded-sweatshirt-optimal-hoodie-template-design-product-promotion_961038-87409.jpg?ga=GA1.2.791720000.1721608409&semt=ais_hybrid"
+  }
+
+
+
+
+
+
+
+]

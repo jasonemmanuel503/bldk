@@ -1,0 +1,87 @@
+:root{
+  --bg-1:#fff;
+  --color:#000;
+  --color-w: #fff;
+  --color-2:#1B1212;
+  --color-p:#353935;
+  --color-links:#28282B;
+  --accent:#FF0000;
+  --hover:#FF3131;
+  --focus:#FF2400;
+  /**-------Fonts Family ****/
+  --font-main:'Poiret', sans-serif;
+  --font-logo:'Parisienne', sans-serif;
+  --font-inter:'Inter', sans-serif;
+  /**** Spacing ***/
+  --container: 0.75rem 2.5rem;
+  --mobile: 0.50rem 0.8rem;
+  --inner:0.625rem;
+  --line-height:1.6;
+  --mt: 1rem;
+  --button: 0.85rem 2rem;
+  --button-md:0.85rem 1.5rem;
+  --button-sm:0.65rem 1rem;
+  --button-X-sm:0.35rem 2rem;
+  /*** Font Sizes ****/
+  --fz-12:12px;
+  --fz-14:14px;
+  --fz-16:16px;
+  --fz-18:18px;
+  --fz-20:20px;
+  --fz-22:22px;
+  --fz-24:24px;
+  --fz-28:28px;
+  --fz-34:34px;
+  --fz-38:38px;
+  /*** Transition ****/
+  --transition: 300ms ease-in-out;
+  --transition-all: all 200ms ease-in-out;
+  --border-50: 50%;
+  --border-50px:50px;
+  --border-bottom: 1px solid #000;
+  --border-10: 10px;
+  --transparent-bg: hsl(0 0 100% / 0.12);
+  --blur:30px;
+
+  /*** Other Colors *****/
+  --yellow: #fff500;
+  --green: green;
+  --orange: orange;
+  --indigo: indigo;
+}
+
+@media screen and (max-width: 1024px) {
+
+body{
+  overflow-x: hidden;
+  margin: unset;
+  
+}
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+  
+  
+
+}
+
+
+/***** MAX WIDTH 350PX ******************/
+@media screen and (max-width: 575px) {
+  
+ 
+
+}
+
+/************* MAX WIDTH 290PX ************/
+@media screen and (max-width: 290px) {
+  body{
+    overflow-x: scroll;
+  }
+  
+  
+
+}

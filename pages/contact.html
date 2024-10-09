@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/public/favicon_io/favicon.ico" type="image/x-icon">
+    <!------------------------FAVICON------------------------>
+    <link rel="shortcut icon" href="/public/favicon_io/favicon.ico" type="image/x-icon">
+    <!-------------------------CDN LINKS----------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-------------------------CSS LINKS----------------------->
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/queries/contact-queries.css">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/queries/nav-queries.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/queries/footer-queries.css">
+    <!-------------------------JS LINKS----------------------->
+    <script src="/index.js" defer></script>
+    <script src="/js/footer.js" defer></script>
+  <title>Contactez Nous</title>
+</head>
+<body>
+  
+  <!-------------------------NAVIGATION----------------------->
+    <!--------------------nav------------------>
+    <nav class="container  navigation">
+      <div class="logo-box"><a href="index.css" class="logo">BLD<span class="logo-red">K</span></a></div>
+      <ul class="nav-links">
+        <a href="/index.html" class="links active">accueil</a>
+        <a href="/pages/about.html" class="links">a propos</a>
+        <a href="/pages/shop.html"  class="links">boutique</a>
+        <a href="/pages/guimool.html" target="_blank" class="links">guimool</a>
+        <a href="/pages/contact.html" class="links">contact</a>
+      </ul>
+      <div class="button"><button class="contact-btn">contactez nous</button></div>
+      <div class="hamburger" id="menu-btn" >
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+<!---------------------PAGE ONTENTS START HERE------------------>
+<div class="container contact-banner">
+  <div class="home-icon"><a href="/index.html"><i class="fa-solid fa-home"></i></a></div>
+  <div class="contact-title"><h1>contacts</h1></div>
+</div>
+<!-------Contact Contents-------------------->
+<div class="container contact-contents">
+ <div class="contact-container">
+  <div class="address-box">
+    <div class="address">
+      <div class="address-icon"><i class="fa-solid fa-location-dot"></i></div>
+      <div class="adress-contents">
+        <h3>address</h3>
+        <p>166 Marhaba rue, AD, CM</p>
+      </div>
+    </div><!----address 1-->
+
+    <div class="address">
+      <div class="address-icon"><i class="fa-solid fa-phone"></i></div>
+      <div class="adress-contents">
+        <h3>téléphones</h3>
+        <p>+ (237) 697-857-770</p>
+        <p>+ (237) 693-951-771</p>
+        <p>+ (237) 697-851-525</p>
+      </div>
+    </div><!----address 2-->
+
+    <div class="address">
+      <div class="address-icon"><i class="fa-solid fa-envelope"></i></div>
+      <div class="adress-contents">
+        <h3>nos adresses mail</h3>
+        <p>support@bldkindustrie.com</p>
+        <p>bonjour@bldkindustrie.com</p>
+        <p>contacts@bldkindustrie.com</p>
+      </div>
+    </div><!----address 3-->
+    
+  </div>
+  <!-------------FORM------------------>
+  <div class="contact-form">
+    <form id="contact-form" action="https://formspree.io/f/xanwzblq" method="POST">
+      <div class="form-title">Contactez nous</div>
+      <label for="name">Nom *</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email * </label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message * </label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit">Envoyer</button>
+  </form>
+  </div>
+ </div>
+</div>
+
+  <!----------------------------FOOTER SECTION -------------------->
+  <footer class="footer-container">
+    <div class="footer-layout-box">
+     <!---------copyrights section--------------->
+     <div class="copyrights">
+      <span class="copyright-text"> BLDK &#169 2024 - tous droits réservés. </span>
+     </div>
+   </div>
+  </footer> 
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const form = this;
+
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('Message sent successfully!');
+                form.reset(); // Reset the form fields
+            } else {
+                alert('Failed to send message. Please try again.');
+            }
+        })
+        .catch(error => {
+            alert('Error: ' + error);
+        });
+    });
+</script>
+
+
+</body>
+</html>

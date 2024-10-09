@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+}
+
+::before, ::after{
+  position: absolute;
+  content: '';
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+a{
+  font-size: var(--fz-14);
+  color: var(--color-links);
+  font-weight: 500;
+  transition: var(--transition-all);
+  font-family: var(--font-main);
+  cursor: pointer;
+}
+
+a:hover{
+  color: var(--hover);
+}
+
+a:focus,
+a:focus-within,
+a:focus-visible{
+  color: var(--focus);
+}
+
+p{
+  font-size: var(--fz-14);
+  font-family: var(--font-inter);
+  font-weight: 500;
+  line-height: var(--line-height);
+  color: var(--color-p);
+  user-select: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--font-main);
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+  text-wrap: wrap;
+  color: var(--color);
+  user-select: none;
+}
+
+.container{
+  padding: var(--container);
+}
+
+button{
+background-color: var(--color);
+padding:var(--button) ;
+color: var(--color-w);
+font-size: var(--fz-14);
+border: 0;
+outline: 0;
+cursor: pointer;
+transition: background-color var(--transition);
+}
+
+button:hover{
+  background-color: var(--hover);
+}
+
+:root{
+  --bg-1:#fff;
+  --color:#000;
+  --color-w: #fff;
+  --color-2:#1B1212;
+  --color-p:#353935;
+  --color-links:#28282B;
+  --accent:#FF0000;
+  --hover:#FF3131;
+  --focus:#FF2400;
+  /**-------Fonts Family ****/
+  --font-main:'Josefin+Sans', sans-serif;
+  --font-logo:'Parisienne', sans-serif;
+  --font-inter:'Inter', sans-serif;
+  /**** Spacing ***/
+  --container: 0.75rem 1.8rem;
+  --mobile: 0.50rem 0.8rem;
+  --inner:0.625rem;
+  --line-height:1.6;
+  --mt: 1rem;
+  --button: 0.85rem 2rem;
+  --button-md:0.85rem 1.5rem;
+  --blockquote: 0.625rem 1.5rem;
+  /*** Font Sizes ****/
+  --fz-12:12px;
+  --fz-14:14px;
+  --fz-16:16px;
+  --fz-18:18px;
+  --fz-20:20px;
+  --fz-22:22px;
+  --fz-24:24px;
+  --fz-28:28px;
+  --fz-30: 30px;
+  --fz-34:34px;
+  --fz-38:38px;
+  /*** Transition ****/
+  --transition: 300ms ease-in-out;
+  --transition-all: all 200ms ease-in-out;
+  --border-50: 50%;
+  --border-50px:50px;
+  --border-bottom: 1px solid #000;
+  --border-10: 10px;
+  --transparent-bg: hsl(0 0 100% / 0.12);
+  --blur:30px;
+
+  /*** Other Colors *****/
+  --yellow: #fff500;
+  --green: green;
+  --orange: orange;
+  --indigo: indigo;
+}
+
+section, main, div{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100vw; /* Ensure body takes full viewport width */
+  max-width: 100%; /* Prevent body from exceeding viewport */
+  box-sizing: border-box; /* Include padding and border in width calculations */
+}
+
+/************ NEWSLETTER SECTION STYLING ****************/
+.newsletter-container{
+  min-height: 40vh;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  background-image: url('/public/assets/newsletter.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.newsletter-container::after{
+  inset: 0 0 0 0;
+  background-color: rgba(0,0,255, 0.4);
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+}
+
+.newsletter-inner-box{
+  z-index: 3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-texts{
+  width: 50%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-direction: column;
+  user-select: none;
+}
+
+.news-span{
+  font-size: var(--fz-18);
+  text-align: center;
+  color: var(--color-w);
+  margin-bottom: var(--mt);
+  opacity: 0.7;
+}
+
+.news-title{
+  font-size: var(--fz-28);
+  color: var(--color-w);
+  text-align: center;
+  line-height: 1.5;
+}
+
+
+
+/*********NEWS FORM STYLING ****/
+
+.news-form-container,
+.newsletter-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50%;
+min-height: 100%;
+background: transparent;
+
+}
+
+.newsletter-form #email{
+  width: 30vw;
+  min-height: 5vh;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fz-14);
+  font-family: var(--font-main);
+  color: var(--color);
+  padding-left: 10px;
+}
+
+.newsletter-form::placeholder{
+  color: var(--color-p);
+  opacity: 0.7;
+  font-family: var(--font-main);
+}
+
+.newsletter-form  #submit{
+  min-height: 5vh;
+  width: 10vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.newsletter-form #newsletter-send-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1px;
+  font-size: var(--fz-18);
+  transition: color var(--transition);
+}
+
+.newsletter-form #newsletter-send-btn:hover{
+  opacity: 0.8;
+}
+.newsletter-form  #submit:hover{
+  background-color: var(--color);
+}
+

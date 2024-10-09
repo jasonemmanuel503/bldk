@@ -1,0 +1,86 @@
+:root {
+	--bg-1: #fff;
+	--color: #000;
+	--color-w: #fff;
+	--color-2: #1b1212;
+	--color-p: #353935;
+	--color-links: #28282b;
+	--accent: #ff0000;
+	--hover: #ff3131;
+	--focus: #ff2400;
+	/**-------Fonts Family ****/
+	--font-main: "Josefin+Sans", sans-serif;
+	--font-logo: "Parisienne", sans-serif;
+	--font-inter: "Inter", sans-serif;
+	/**** Spacing ***/
+	--container: 0.75rem 1.8rem;
+	--mobile: 0.5rem 0.8rem;
+	--inner: 0.625rem;
+	--line-height: 1.6;
+	--mt: 1rem;
+	--button: 0.85rem 2rem;
+	--button-md: 0.85rem 1.5rem;
+	--blockquote: 0.625rem 1.5rem;
+	/*** Font Sizes ****/
+	--fz-12: 12px;
+	--fz-14: 14px;
+	--fz-16: 16px;
+	--fz-18: 18px;
+	--fz-20: 20px;
+	--fz-22: 22px;
+	--fz-24: 24px;
+	--fz-28: 28px;
+	--fz-30: 30px;
+	--fz-34: 34px;
+	--fz-38: 38px;
+	/*** Transition ****/
+	--transition: 300ms ease-in-out;
+	--transition-all: all 200ms ease-in-out;
+	--border-50: 50%;
+	--border-50px: 50px;
+	--border-bottom: 1px solid #000;
+	--border-10: 10px;
+	--transparent-bg: hsl(0 0 100% / 0.12);
+	--blur: 30px;
+
+	/*** Other Colors *****/
+	--yellow: #fff500;
+	--green: green;
+	--orange: orange;
+	--indigo: indigo;
+}
+
+@media screen and (max-width: 900px) {
+	.nav-links-2 .links-2 {
+		margin-inline: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 706px) {
+	.footer-nav-links-section {
+		flex-direction: column;
+		-ms-flex-direction: column;
+		
+	}
+
+	.nav-links-2 {
+		flex-direction: column;
+		-ms-flex-direction: column;
+   justify-content: start;
+	}
+
+	.links-2 {
+		line-height: 2.6;
+    flex-direction: column;
+		-ms-flex-direction: column;
+    text-transform: uppercase;
+    justify-content: start;
+    align-self: start;
+    text-align: start;
+
+	}
+
+  .copyright-text{
+    font-size: 14px;
+  }
+}

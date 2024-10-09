@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/public/favicon_io/favicon.ico" type="image/x-icon">
+  <!-------------------------CDN LINKS----------------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-------------------------CSS LINKS----------------------->
+  <link rel="stylesheet" href="/css/guimool.css">
+  <link rel="stylesheet" href="/queries/guimool-queries.css">
+  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/queries/nav-queries.css">
+  
+  <!-------------------------JS LINKS----------------------->
+  <script src="/js/guimool.js" defer></script>
+  <script src="/js/swiper.js" defer></script>
+  <script src="/js/ajax-guimool.js" defer></script>
+  <script src="https://sandbox.paypal.com/sdk/js?client-id=AeOhyXLOWMUZP7WJM1bIvGRKbB8rDNkv5LG_-4V-49vtO3E2YffBpct_pju_dqoMNORQrqnGlZ9hhf_-" defer></script>
+  
+  <title>GUIMOOL, Votre Plateforme De Distribution Agrée</title>
+</head>
+<body>
+ 
+  <main class="container guimool-container" id="ajax-container">
+   <!---------------TOP NAVIGATION------->
+   <div class="nav-container">
+    <div class="logo">
+        <img src="/public/assets/logo-guimool.png" alt="" class="logo-image">
+    </div>
+    <ul class="nav-links-section" id="navMenuGuimoool">
+      <a href="#accueil">accueil</a>
+      <a href="#artistes">artistes</a>
+      <a href="#albums">albums</a>
+    </ul>
+
+    <div class="social-media-links-guimool">
+        <a class="social-guimool" target="_blank" href="https://web.facebook.com/bldkindustrie/events/?ref=page_internal&mt_nav=0&paipv=0&eav=AfZOMUMQ9lCvqrDsvIxwX4fRk4ISLKHhPOl33DDN37Oj7m5cQbDqt0pwLRAbpHmYQMY&_rdc=1&_rdr"><i class="fa-brands fa-facebook"></i></a>
+        <a class="social-guimool" target="_blank" href="https://www.youtube.com/channel/UCnxvHhv5IbhxjjvrmpEUQhg"><i class="fa-brands fa-youtube"></i></a>
+        <a class="social-guimool" target="_blank" href="https://www.tiktok.com/@baladji_kwata"><i class="fa-brands fa-tiktok"></i></a>
+        <a class="social-guimool" target="_blank" href="https://www.instagram.com/baladjikwata/"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <div class="hamburger"  >
+      <div style="background-color: white;" id="menu-btn-2" ></div>
+      <div style="background-color: white;" id="menu-btn-2" ></div>
+      <div style="background-color: white;" id="menu-btn-2" ></div>
+    </div>
+</div>
+
+<!---------------------AJAX CHILD CONTENTS RENDER------>
+<div class="ajax-children-wrapper" id="ajax-children-wrapper">
+    <div id="top-singles-parent" class="top-singles-container">
+        <h1>top singles</h1>
+        <div id="top-singles-cards"></div>
+    </div>
+    <div id="top-artists">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper"> <!-- Fixed the typo here -->
+                <div class="swiper-slide"></div> <!-- Add content to each slide -->
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                
+            </div>
+    
+            <!---------------PAGINATION------------------>
+            <div class="swiper-pagination"></div> <!-- Only one pagination element -->
+            <!---------------NAVIGATION------------------>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <div id="top-albums"></div>
+</div>
+
+<!-- MP3 Preview -->
+<div class="mp3-previewer" id="mp3-preview">
+    <audio id="audio-2" controls style="display:flex;"></audio>
+    <p id="preview-message" style="display:none;">vous avez aimé ce morceaux?. achètez le a seulement 500 FCFA! <button href="" id="buy-btn">achetez</button></p>
+</div>
+
+<!-- Purchase Modal -->
+<div id="purchase-modal" style="display:none;">
+    <div class="modal-content">
+        <span id="close-modal" style="cursor:pointer;">&times;</span>
+        <h3>procèdez a l'achat</h3>
+        <div id="track-info" style="margin-bottom: 20px;">
+            <img id="track-art" src="" alt="Track Art" style="width: 100px; height: auto;"/>
+            <h4 id="track-title"></h4>
+            <p id="track-artist"></p>
+            <p id="track-price"></p>
+        </div>
+        <input type="email" id="user-email" placeholder="Votre Email" required />
+        <input type="text" id="phone-number" placeholder="numéro de téléphone" required />
+        <div class="payment-options"><button id="pay-mobile-money">Payez avec  MoMo</button>
+            <button id="pay-orange-money">Payez avec  Orange</button>
+            <div id="paypal-button-container">Payez avec  Paypal</div>
+        
+        </div>
+        
+    </div>
+</div>
+
+<!-- Success Message -->
+<div id="success-message" style="display:none;">
+    <h3>Payment Successful!</h3>
+    <p>Your payment has been processed successfully. Thank you for your purchase!</p>
+</div>
+</main>
+
+
+<!---------------------------STRAPI CDN --------------------------------------------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>

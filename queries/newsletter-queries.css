@@ -1,0 +1,137 @@
+:root{
+  --bg-1:#fff;
+  --color:#000;
+  --color-w: #fff;
+  --color-2:#1B1212;
+  --color-p:#353935;
+  --color-links:#28282B;
+  --accent:#FF0000;
+  --hover:#FF3131;
+  --focus:#FF2400;
+  /**-------Fonts Family ****/
+  --font-main:'Josefin+Sans', sans-serif;
+  --font-logo:'Parisienne', sans-serif;
+  --font-inter:'Inter', sans-serif;
+  /**** Spacing ***/
+  --container: 0.75rem 1.8rem;
+  --mobile: 0.50rem 0.8rem;
+  --inner:0.625rem;
+  --line-height:1.6;
+  --mt: 1rem;
+  --button: 0.85rem 2rem;
+  --button-md:0.85rem 1.5rem;
+  --blockquote: 0.625rem 1.5rem;
+  /*** Font Sizes ****/
+  --fz-12:12px;
+  --fz-14:14px;
+  --fz-16:16px;
+  --fz-18:18px;
+  --fz-20:20px;
+  --fz-22:22px;
+  --fz-24:24px;
+  --fz-28:28px;
+  --fz-30: 30px;
+  --fz-34:34px;
+  --fz-38:38px;
+  /*** Transition ****/
+  --transition: 300ms ease-in-out;
+  --transition-all: all 200ms ease-in-out;
+  --border-50: 50%;
+  --border-50px:50px;
+  --border-bottom: 1px solid #000;
+  --border-10: 10px;
+  --transparent-bg: hsl(0 0 100% / 0.12);
+  --blur:30px;
+
+  /*** Other Colors *****/
+  --yellow: #fff500;
+  --green: green;
+  --orange: orange;
+  --indigo: indigo;
+}
+
+
+/*********** NEWSLETTER QUERIES ***********/
+@media screen and (max-width: 1024px){
+  .newsletter-container{
+    min-height: 40vh;
+    margin-top: -3rem;
+  }
+
+  .newsletter-inner-box{
+    flex-direction: column;
+    -ms-flex-direction: column;
+  }
+
+  
+.news-form-container,
+.newsletter-form,
+  .news-texts{
+    width: 100%;
+    min-height: 50%;
+  
+  }
+
+  .news-texts{
+    width: 60%;
+  }
+
+  .news-title{
+    font-size: var(--fz-22);
+    margin-bottom: calc(var(--mt) * 2);
+  }
+
+    
+.news-form-container,
+.newsletter-form{
+  min-height: 25%;
+}
+
+.newsletter-form #email{
+  min-height: 10vh;
+  width: 50vw;
+  font-size: var(--fz-18);
+}
+
+.newsletter-form  #submit{
+  min-height: 10vh;
+  width: 15vw;
+  background-color: var(--accent);
+}
+
+.newsletter-form #newsletter-send-btn{
+  font-size: var(--fz-22);
+}
+
+
+}
+
+@media screen and (max-width: 575px) {
+
+  .news-texts{
+    width: 100%;
+  }
+
+  .news-title{
+    font-size: var(--fz-18);
+    
+  }
+
+  .news-span{
+    font-size: var(--fz-16);
+  }
+
+
+  .newsletter-form #email{
+    min-height: 8vh;
+    width: 65vw;
+    font-size: var(--fz-18);
+  }
+  
+  .newsletter-form  #submit{
+    min-height: 8vh;
+    width: 15vw;
+    
+  }
+
+}

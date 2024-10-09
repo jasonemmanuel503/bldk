@@ -1,0 +1,116 @@
+:root {
+	--bg-1: #fff;
+	--color: #000;
+	--color-w: #fff;
+	--color-2: #1b1212;
+	--color-p: #353935;
+	--color-links: #28282b;
+	--accent: #ff0000;
+	--hover: #ff3131;
+	--focus: #ff2400;
+	/**-------Fonts Family ****/
+	--font-main: "Josefin+Sans", sans-serif;
+	--font-logo: "Parisienne", sans-serif;
+	--font-inter: "Inter", sans-serif;
+	/**** Spacing ***/
+	--container: 0.75rem 1.8rem;
+	--mobile: 0.5rem 0.8rem;
+	--inner: 0.625rem;
+	--line-height: 1.6;
+	--mt: 1rem;
+	--button: 0.85rem 2rem;
+	--button-md: 0.85rem 1.5rem;
+	--blockquote: 0.625rem 1.5rem;
+	/*** Font Sizes ****/
+	--fz-12: 12px;
+	--fz-14: 14px;
+	--fz-16: 16px;
+	--fz-18: 18px;
+	--fz-20: 20px;
+	--fz-22: 22px;
+	--fz-24: 24px;
+	--fz-28: 28px;
+	--fz-30: 30px;
+	--fz-34: 34px;
+	--fz-38: 38px;
+	/*** Transition ****/
+	--transition: 300ms ease-in-out;
+	--transition-all: all 200ms ease-in-out;
+	--border-50: 50%;
+	--border-50px: 50px;
+	--border-bottom: 1px solid #000;
+	--border-10: 10px;
+	--transparent-bg: hsl(0 0 100% / 0.12);
+	--blur: 30px;
+
+	/*** Other Colors *****/
+	--yellow: #fff500;
+	--green: green;
+	--orange: orange;
+	--indigo: indigo;
+}
+
+/**************CONTACT QUERIES ****************/
+@media screen and (max-width: 1024px) and (min-height: 1200px) {
+	.home-icon i {
+		margin-right: calc(var(--mt) * 2);
+	}
+
+	.home-icon i,
+	.contact-title h1 {
+		font-size: var(--fz-38);
+	}
+}
+
+/**************768PX ****************/
+@media screen and (max-width: 1000px) {
+
+  .contact-container{
+    flex-direction: column;
+    -ms-flex-direction: column;
+  }
+
+  .contact-form{
+    order: 1;
+    max-width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .address-box{
+    order: 2;
+    max-width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    -ms-flex-direction: row;
+  }
+
+  #contact-form input,
+#contact-form textarea{
+  width: 100%;
+}
+
+}
+
+/**************768PX ****************/
+@media screen and (max-width: 757px) {
+  .address-box{
+    order: 2;
+    max-width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    -ms-flex-direction: column;
+  }
+
+
+
+}
+
+
+
+
+/**************768PX ****************/
+@media screen and (max-width: 450px) {
+}

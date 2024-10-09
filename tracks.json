@@ -1,0 +1,15 @@
+[
+  {
+      "title": "Song Title 1",
+      "artist": "Artist Name 1",
+      "coverArt": "path/to/cover-art-1.jpg",
+      "price": 500
+  },
+  {
+      "title": "Song Title 2",
+      "artist": "Artist Name 2",
+      "coverArt": "path/to/cover-art-2.jpg",
+      "price": 500
+  }
+  
+]

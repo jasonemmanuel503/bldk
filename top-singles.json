@@ -1,0 +1,88 @@
+[
+    {
+        "artcover": "https://i.pinimg.com/736x/02/46/76/02467676bc633185e2a4ddec4d321d1b.jpg",
+        "audioUrl": "https://www.dropbox.com/scl/fi/fkcix82somg0pp3anztp8/Chris-Brown-Angel-Numbers-_-LONGER-VERSION-LYRICS.mp3?rlkey=q0uejw3mvot0v1dum655h7jnw&st=j8kmal0g&dl=1",
+        "songTitle": "Bruce Lee",
+        "artistName": "Chris Brown",
+        "price": "500 XAF",
+        "id": 1
+    },
+    {
+        "artcover": "https://source.boomplaymusic.com/group10/M00/12/09/b14821d8ae2048b2bf65fb614f44e1a3_464_464.webp",
+        "audioUrl": "https://www.dropbox.com/scl/fi/fkcix82somg0pp3anztp8/Chris-Brown-Angel-Numbers-_-LONGER-VERSION-LYRICS.mp3?rlkey=q0uejw3mvot0v1dum655h7jnw&st=j8kmal0g&dl=1",
+        "songTitle": "Bolide allemand",
+        "artistName": "SDM",
+        "price": "500 XAF",
+        "id": 2
+    },
+    {
+        "artcover": "https://source.boomplaymusic.com/group10/M00/A0/BC/eeb3730fbc3643f68d87058ae23ce74c_464_464.webp",
+        "audioUrl": "https://www.dropbox.com/scl/fi/fkcix82somg0pp3anztp8/Chris-Brown-Angel-Numbers-_-LONGER-VERSION-LYRICS.mp3?rlkey=q0uejw3mvot0v1dum655h7jnw&st=j8kmal0g&dl=1",
+        "songTitle": "la fame",
+        "artistName": "Lefa",
+        "price": "500 XAF",
+        "id": 3
+    },
+    {
+        "artcover": "https://source.boomplaymusic.com/group10/M00/0B/14/f5292d833e4a427ea2f538e3f8050466_464_464.webp",
+        "audioUrl": "https://www.dropbox.com/scl/fi/fkcix82somg0pp3anztp8/Chris-Brown-Angel-Numbers-_-LONGER-VERSION-LYRICS.mp3?rlkey=q0uejw3mvot0v1dum655h7jnw&st=j8kmal0g&dl=1",
+        "songTitle": "Genkidama",
+        "artistName": "Niska",
+        "price": "500 XAF",
+        "id": 4
+    },
+
+    {
+        "artcover": "https://source.boomplaymusic.com/group10/M00/09/12/fef96e5a08104ced9d263b16861bdcb8H1052W1052_464_464.webp",
+        "audioUrl": "https://www.boomplay.com/songs/181755868?srModel=COPYLINK&srList=WEB",
+        "songTitle": "Kata",
+        "artistName": "MHD",
+        "price": "500 XAF",
+        "id": 5
+    },
+
+    {
+        "artcover": "https://source.boomplaymusic.com/group10/M00/CC/E6/04ac2a63dc1c465c8f76f032bae4cc2d_464_464.webp",
+        "audioUrl": "https://www.boomplay.com/songs/181755868?srModel=COPYLINK&srList=WEB",
+        "songTitle": "Halo",
+        "artistName": "Beyoncé  ",
+        "price": "500 XAF",
+        "id": 6
+    },
+
+    {
+        "artcover": "https://source.boomplaymusic.com/group10/M00/70/32/a4cdcd412b9c43dfb812ca9dd7594f7f_464_464.webp",
+        "audioUrl": "https://www.boomplay.com/songs/181755868?srModel=COPYLINK&srList=WEB",
+        "songTitle": "la verité",
+        "artistName": "Dadju ",
+        "price": "500 XAF",
+        "id": 7
+    },
+
+    {
+        "artcover": "https://source.boomplaymusic.com/group10/M00/06/17/24e1828ed26b4d97bc77938b411673c5_464_464.webp",
+        "audioUrl": "https://www.boomplay.com/songs/181755868?srModel=COPYLINK&srList=WEB",
+        "songTitle": "Hotline Blink",
+        "artistName": "Drake",
+        "price": "500 XAF",
+        "id": 8
+    },
+
+    {
+        "artcover": "https://source.boomplaymusic.com/group10/M00/0E/3F/7eb485300e744265919e4c6175f923af_464_464.webp",
+        "audioUrl": "https://www.boomplay.com/songs/181755868?srModel=COPYLINK&srList=WEB",
+        "songTitle": "Fein",
+        "artistName": "Travis Scott",
+        "price": "500 XAF",
+        "id": 9
+    },
+
+    {
+        "artcover": "https://source.boomplaymusic.com/group10/M00/9A/9C/9b3b1a13f36c476da363c369152768b6_464_464.webp",
+        "audioUrl": "https://www.boomplay.com/songs/181755868?srModel=COPYLINK&srList=WEB",
+        "songTitle": "StucK With U",
+        "artistName": "Ariana Grande ",
+        "price": "500 XAF",
+        "id": 10
+    }
+  ]

@@ -1,0 +1,173 @@
+:root{
+  --bg-1:#fff;
+  --color:#000;
+  --color-w: #fff;
+  --color-2:#1B1212;
+  --color-p:#353935;
+  --color-links:#28282B;
+  --accent:#FF0000;
+  --hover:#FF3131;
+  --focus:#FF2400;
+  /**-------Fonts Family ****/
+  --font-main:'Josefin+Sans', sans-serif;
+  --font-logo:'Parisienne', sans-serif;
+  --font-inter:'Inter', sans-serif;
+  /**** Spacing ***/
+  --container: 0.75rem 2.5rem;
+  --mobile: 0.50rem 0.8rem;
+  --inner:0.625rem;
+  --line-height:1.6;
+  --mt: 1rem;
+  --button: 0.85rem 2rem;
+  --button-md:0.85rem 1.5rem;
+  /*** Font Sizes ****/
+  --fz-12:12px;
+  --fz-14:14px;
+  --fz-16:16px;
+  --fz-18:18px;
+  --fz-20:20px;
+  --fz-22:22px;
+  --fz-24:24px;
+  --fz-28:28px;
+  --fz-34:34px;
+  --fz-38:38px;
+  /*** Transition ****/
+  --transition: 300ms ease-in-out;
+  --transition-all: all 200ms ease-in-out;
+  --border-50: 50%;
+  --border-50px:50px;
+  --border-bottom: 1px solid #000;
+  --border-10: 10px;
+  --transparent-bg: hsl(0 0 100% / 0.12);
+  --blur:30px;
+
+  /*** Other Colors *****/
+  --yellow: #fff500;
+  --green: green;
+  --orange: orange;
+  --indigo: indigo;
+}
+
+
+body{
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+
+/**************** MEDIA QUERIES *********************/
+@media screen and (max-width: 1024px) {
+ 
+
+  .main-section{
+    padding: var(--mobile);
+    padding: unset;
+    margin: 0 auto;
+    position: unset;
+    background-color: teal;
+  }
+
+  .texts-contents-box-upper{
+    --main-height: 70vh;
+    height: var(--main-height);
+  }
+
+
+
+
+
+
+
+}
+
+
+
+
+/*************** MAX WIDTH 768PX*********/
+@media screen and (max-width: 768px) {
+  
+  .columns-2-columns{
+    height: 50%;
+    width: 100vw;
+    flex-direction: column;
+    margin-bottom: calc(var(--mt) * 4);
+  }
+
+  .col-left{
+    width: 100%;
+    margin-inline: auto;
+    align-items: center;
+    background-color: yellow;
+  }
+
+  .why-choose{
+    text-align: center;
+    font-size: var(--fz-16);
+  }
+
+  .why-bold-text{
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  .col-right{
+    width: 100%;
+    margin-inline: auto;
+    background-color: red;
+  }
+
+  .right-1{
+    width: 50%;
+    padding: unset;
+    
+    
+  }
+
+  .full-width-column{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+}
+
+
+
+
+
+/*************** MAX WIDTH 575PX*********/
+@media screen and (max-width: 575px) {
+  
+}
+
+
+
+/*************** MAX WIDTH 430PX*********/
+@media screen and (max-width: 430px) {
+
+  .columns-2-columns{
+    height: 70%;
+  }
+
+
+  .col-right{
+    width: 100%;
+    flex-direction: column;
+  }
+
+
+  .right-1{
+    width: 100%;
+    margin-bottom: var(--mt);
+    
+  }
+
+  .full-width-column{
+    height: 40vh;
+    background-color: green;
+    width: 100%;
+    padding: unset;
+   
+  }
+
+
+}
